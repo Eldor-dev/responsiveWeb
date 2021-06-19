@@ -93,7 +93,7 @@
 .navbar__links:hover {
     color: #ff8177;
     transition: all 0.3s ease;
-}
+}   
 
 @media screen and (max-width: 960px) {
     .navbar__container {
@@ -112,11 +112,10 @@
         margin: 0;
         width: 100%;
         position: absolute;
-        /*top: -1000px;*/
+        top: -1000px;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: -1;
-        background: #131313;
     }
 
     .navbar__menu.active {
@@ -152,5 +151,40 @@
         display: table;
     }
 
+    .navbar__btn {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 50px;
+        margin: 0;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 30%;
+        right: 5%;
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+ 
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translate(0, 8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translate(0, -8px) rotate(-45deg);
+    }
 }
 
