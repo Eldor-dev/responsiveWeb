@@ -391,7 +391,6 @@
         margin: 0 auto;
         height: 90%;
     }
-}
 
 .main__img--container {
     display: flex;
@@ -411,4 +410,43 @@
 .main__content h1 {
     font-size: 2.5rem;
     margin-top: 2rem;
+}
+
+.main__content h2 {
+    font-size: 3rem;
+}
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width: 480px) {
+    .main__img--card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .fa-user, .fa-layer-group {
+        font-size: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content h2 {
+        font-size: 2rem;
+    }
+    
+    .main__content p {
+        margin-top: 2rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
 }
